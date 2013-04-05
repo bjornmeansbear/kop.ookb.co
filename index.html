@@ -55,15 +55,15 @@
       <!-- *************. -->
       <article class="row">
         <h1 class="span12">The Basic Kit</h1>
-        <section class="span4">
+        <section class="span3 type">
           <h2>Type</h2>
           <ul>
-            <li class="league">League Gothic</li>
-            <li>Open Sans</li>
-            <li class="gentium">Gentium</li>
+            <li class="league"><a href="files/leaguegothic.zip">League Gothic</a></li>
+            <li><a href="files/opensans.zip">Open Sans</a></li>
+            <li class="gentium"><a href="files/gentiumbook.zip">Gentium Book</a></li>
           </ul>
         </section>
-        <section class="span4 palette">
+        <section class="span5 palette">
           <h2>Color Palette</h2>
           <ul>
             <li class="pink">Pink</li>
@@ -137,9 +137,8 @@
     <script src="js/bootstrap-typeahead.js"></script>
 
     <!-- some of my references -->
-<!--     <script src="http://malsup.github.com/jquery.cycle.all.js"></script> -->
     <script src="js/jquery.cycle.all.js"></script>
-    <script src="js/jquery.masonry.js"></script>
+    <script src="js/jquery.fittext.js"></script>
 
     <!-- CUSTOM JS CAN GO IN HERE -->
     <!-- scroll page down to elements and IDs -->
@@ -150,12 +149,23 @@
         event.preventDefault();
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
       });
-    </script>
 
-    <script>
       $(document).ready(function() {
         $("#main article").after('<div class="container afterArticle"></div>');
       });
+
+      $("section.type ul li a").fitText(.75);
+      $("section.type ul li:first-child a").fitText(.44);
+
+      $(".palette li").hover(
+        function () {
+          var color = $(this).css("background-color");
+          $(this).html(color);
+        },
+        function () {
+          var colorname = $(this).attr("class");
+          $(this).html(colorname);
+        });
     </script>
 
     <!-- end scripts-->
