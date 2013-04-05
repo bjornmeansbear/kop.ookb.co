@@ -117,7 +117,7 @@ header #logo {}
   border-bottom: none; 
   padding-bottom: 0;
 }
-
+   
 footer {
   border-top: 7.5px solid rgba(47,41,38,1); 
   margin-top: 45px;
@@ -158,6 +158,8 @@ footer, footer p {
   padding: 0;
   text-transform: capitalize;
 }
+
+.palette ul {margin: 15px 0;}
 
 .palette ul li {
   list-style: none;
