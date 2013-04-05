@@ -118,14 +118,6 @@ header #logo {}
   padding-bottom: 0;
 }
 
-#main article aside,
-#main article aside p,
-#main article aside p strong {
-  font-size: 30px;
-  font-weight: 700;
-  text-align: right;
-}
-
 footer {
   border-top: 7.5px solid rgba(47,41,38,1); 
   margin-top: 45px;
