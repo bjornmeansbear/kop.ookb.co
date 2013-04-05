@@ -164,6 +164,7 @@ footer, footer p {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
 }
 
 .palette ul li {
@@ -190,7 +191,7 @@ footer, footer p {
   }
 
 
-/* 3. TYPOGRAPHY */
+/* = TYPOGRAPHY */
 /* =================================================================== */
 /* =================================================================== */
 
@@ -209,7 +210,7 @@ header h1 em {
   text-transform: lowercase;
 }
 
-/* 4. Links and More */
+/* = Links and More */
 /* =================================================================== */
 /* =================================================================== */
 
@@ -242,6 +243,15 @@ a:link {
   text-shadow: none;
 }
 
+a:hover img,
+img a:hover,
+.imglink,
+.imglink:hover {
+  background: none;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+}
 
 
 
