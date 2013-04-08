@@ -118,9 +118,11 @@ header #logo {}
   padding-bottom: 0;
 }
    
+/*
 #main article figure {
   padding-top: 55px;
 }
+*/
 
 footer {
   border-top: 7.5px solid rgba(47,41,38,1); 
@@ -141,6 +143,10 @@ footer, footer p {
 
 .fineprint p:hover {
   color: rgba(47,41,38,1) !important;
+}
+
+dl dd {
+  margin-bottom: .5em;
 }
 
 /* = colored background classes */
